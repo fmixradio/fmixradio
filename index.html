@@ -5,31 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FMIX Radio - Santo Domingo</title>
     <style>
-        body {
-            background: linear-gradient(135deg, #1e1e2f, #121212);
-            color: white;
-            font-family: sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            text-align: center;
-        }
-        h1 { font-size: 3rem; margin-bottom: 0; color: #00d2ff; }
-        .logo { font-weight: bold; font-style: italic; color: #ff007a; }
-        .loading {
-            margin-top: 20px;
-            padding: 10px 20px;
-            border: 2px solid #00d2ff;
-            border-radius: 50px;
-        }
+        body { background: #121212; color: white; font-family: sans-serif; text-align: center; padding: 50px; }
+        h1 { color: #00d2ff; font-size: 3rem; }
+        .logo { color: #ff007a; font-style: italic; }
+        .player-container { background: #1e1e2f; padding: 30px; border-radius: 20px; display: inline-block; margin-top: 20px; border: 2px solid #00d2ff; }
+        audio { margin-top: 20px; }
     </style>
 </head>
 <body>
     <h1>FMIX <span class="logo">RADIO</span></h1>
     <p>Música para todo el Planeta</p>
-    <div class="loading">SITIO EN CONSTRUCCIÓN - SANTO DOMINGO</div>
+    
+    <div class="player-container">
+        <h3>ESCUCHA EN VIVO</h3>
+        <audio controls>
+            <source src="URL_DE_TU_STREAMING" type="audio/mpeg">
+            Tu navegador no soporta el audio.
+        </audio>
+    </div>
+
+    <p style="margin-top: 20px; opacity: 0.6;">Santo Domingo, Ecuador</p>
 </body>
 </html>
